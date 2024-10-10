@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Routine Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">WorkoutBuilder</div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Routine Builder.html">Routine Builder</a></li>
+            <li><a id="navactive" href="./Exercise Library.html">Exercise Library</a></li>
+            <li><a href="./Nutrition & Tips.html">Nutrition & Tips</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <div class="user-profile">
+
+            <span>User</span>
+        </div>
+    </nav>
+
+    <!-- Exercise Library Section -->
+    <section id="library">
+        <h2>Exercise Library</h2>
+        <input type="text" placeholder="Search exercises..." id="search-bar">
+        <div class="exercise-list" id="exercise-list">
+            <!-- Push-ups -->
+            <div class="exercise-item" data-name="Push-ups">
+                <h3>Push-ups</h3>
+                <p class="description">A basic yet effective upper body exercise.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Builds upper body strength, enhances muscle endurance.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Start in a plank position with your hands slightly wider than shoulder-width apart.</li>
+                        <li>Lower your body until your chest almost touches the floor.</li>
+                        <li>Push yourself back up to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your body in a straight line throughout the movement. Avoid letting your hips sag.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Squats -->
+            <div class="exercise-item" data-name="Squats">
+                <h3>Squats</h3>
+                <p class="description">A powerful lower body exercise that targets the legs and glutes.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the legs, glutes, and core.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Stand with your feet shoulder-width apart.</li>
+                        <li>Lower your body by bending your knees and hips until your thighs are parallel to the ground.</li>
+                        <li>Push through your heels to return to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your chest up and your knees in line with your toes. Avoid letting your knees collapse inward.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Burpees -->
+            <div class="exercise-item" data-name="Burpees">
+                <h3>Burpees</h3>
+                <p class="description">A full-body exercise that increases strength and endurance.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Boosts cardiovascular fitness, burns calories, strengthens multiple muscle groups.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Start standing with your feet shoulder-width apart.</li>
+                        <li>Drop into a squat position and place your hands on the floor.</li>
+                        <li>Jump your feet back so that you are in a plank position.</li>
+                        <li>Perform a push-up.</li>
+                        <li>Jump your feet back to the squat position and jump up to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Maintain a steady rhythm and ensure full body engagement. Keep your core tight throughout.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Plank -->
+            <div class="exercise-item" data-name="Plank">
+                <h3>Plank</h3>
+                <p class="description">An isometric core exercise that builds stability and strength.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the core, improves posture, enhances overall body stability.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Start in a forearm plank position with your elbows directly under your shoulders.</li>
+                        <li>Keep your body in a straight line from head to heels.</li>
+                        <li>Hold the position while keeping your core engaged and your hips level.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Avoid letting your hips sag or rise too high. Focus on maintaining a straight line.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Lunges -->
+            <div class="exercise-item" data-name="Lunges">
+                <h3>Lunges</h3>
+                <p class="description">A lower body exercise that improves balance and targets the quads.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the legs, improves balance and coordination.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Stand with your feet hip-width apart.</li>
+                        <li>Step forward with one foot and lower your body until both knees are bent at 90 degrees.</li>
+                        <li>Push back to the starting position and repeat with the other leg.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your torso upright and your front knee aligned with your ankle. Avoid letting your knee extend past your toes.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Deadlifts -->
+            <div class="exercise-item" data-name="Deadlifts">
+                <h3>Deadlifts</h3>
+                <p class="description">A compound movement that strengthens the back, glutes, and hamstrings.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Builds strength in the back, glutes, and hamstrings, improves posture.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Stand with your feet hip-width apart and a barbell in front of you.</li>
+                        <li>Bend at the hips and knees to grasp the barbell with an overhand grip.</li>
+                        <li>Lift the barbell by extending your hips and knees until you are standing upright.</li>
+                        <li>Lower the barbell back to the ground with control.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your back straight and your chest up throughout the movement. Avoid rounding your back.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Bench Press -->
+            <div class="exercise-item" data-name="Bench Press">
+                <h3>Bench Press</h3>
+                <p class="description">Targets the chest, shoulders, and triceps.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Builds upper body strength, improves muscle mass in the chest, shoulders, and triceps.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Lie on a bench with your feet flat on the floor and a barbell above your chest.</li>
+                        <li>Lower the barbell to your chest with control.</li>
+                        <li>Push the barbell back up to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your back flat against the bench and your feet on the ground. Avoid bouncing the barbell off your chest.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Rows -->
+            <div class="exercise-item" data-name="Rows">
+                <h3>Rows</h3>
+                <p class="description">Strengthens the back muscles and improves posture.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Enhances back strength, improves posture, engages core muscles.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Stand with your feet hip-width apart and hold a barbell or dumbbells.</li>
+                        <li>Bend at the waist and keep your back straight.</li>
+                        <li>Pull the weights towards your torso, squeezing your shoulder blades together.</li>
+                        <li>Lower the weights back down with control.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your back flat and avoid using your arms excessively. Focus on pulling with your back muscles.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Overhead Press -->
+            <div class="exercise-item" data-name="Overhead Press">
+                <h3>Overhead Press</h3>
+                <p class="description">Works the shoulders, upper chest, and triceps.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the shoulders, improves upper body stability, engages triceps.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Stand with your feet shoulder-width apart and hold a barbell or dumbbells at shoulder height.</li>
+                        <li>Press the weights overhead until your arms are fully extended.</li>
+                        <li>Lower the weights back to shoulder height with control.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your core engaged and avoid arching your back. Press the weights evenly and in a controlled manner.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Bicep Curls -->
+            <div class="exercise-item" data-name="Bicep Curls">
+                <h3>Bicep Curls</h3>
+                <p class="description">Isolates the biceps for strength and size.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Enhances bicep strength and muscle definition.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Stand with your feet hip-width apart and hold a dumbbell in each hand with your palms facing forward.</li>
+                        <li>Keep your elbows close to your torso and curl the weights towards your shoulders.</li>
+                        <li>Lower the weights back down with control.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Avoid swinging your body or using momentum. Focus on contracting your biceps.</p>
+                    <p><strong>Image:</strong></p>
+                </div>
+            </div>
+
+            <!-- Tricep Dips -->
+            <div class="exercise-item" data-name="Tricep Dips">
+                <h3>Tricep Dips</h3>
+                <p class="description">Targets the triceps and chest.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the triceps, improves upper body muscle tone.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Sit on the edge of a bench or chair with your hands next to your hips.</li>
+                        <li>Slide your hips off the edge and lower your body by bending your elbows.</li>
+                        <li>Push yourself back up to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your elbows close to your body and avoid lowering too far. Maintain control throughout the movement.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Leg Press -->
+            <div class="exercise-item" data-name="Leg Press">
+                <h3>Leg Press</h3>
+                <p class="description">Strengthens the quadriceps, hamstrings, and glutes.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Builds lower body strength, improves leg muscle endurance.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Sit on the leg press machine with your back against the seat and your feet on the platform.</li>
+                        <li>Push the platform away by extending your legs.</li>
+                        <li>Slowly return to the starting position by bending your knees.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your feet shoulder-width apart and avoid locking your knees at the top of the movement.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Chest Fly -->
+            <div class="exercise-item" data-name="Chest Fly">
+                <h3>Chest Fly</h3>
+                <p class="description">Stretches and strengthens the chest muscles.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Enhances chest muscle definition, improves flexibility in the chest and shoulders.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Lie on a bench with a dumbbell in each hand and your arms extended above your chest.</li>
+                        <li>Slowly lower the weights out to the sides, keeping a slight bend in your elbows.</li>
+                        <li>Bring the weights back together above your chest.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Avoid letting your elbows drop too low. Keep the movement controlled and focus on contracting your chest muscles.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Lat Pulldown -->
+            <div class="exercise-item" data-name="Lat Pulldown">
+                <h3>Lat Pulldown</h3>
+                <p class="description">Targets the latissimus dorsi muscles in the back.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the back, improves posture, engages the biceps.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Sit at the lat pulldown machine with your feet flat on the ground.</li>
+                        <li>Grasp the bar with an overhand grip and pull it down towards your chest.</li>
+                        <li>Slowly return the bar to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your back straight and avoid leaning too far back. Focus on using your back muscles to pull the bar down.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Cable Crunch -->
+            <div class="exercise-item" data-name="Cable Crunch">
+                <h3>Cable Crunch</h3>
+                <p class="description">Isolates the abdominal muscles for a stronger core.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the core, enhances abdominal muscle definition.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Attach a rope handle to a high cable pulley and kneel in front of it.</li>
+                        <li>Grab the rope with both hands and bring it to your forehead.</li>
+                        <li>Curl your torso down towards your knees.</li>
+                        <li>Return to the starting position with control.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your movements slow and controlled. Focus on engaging your abs throughout the exercise.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Russian Twists -->
+            <div class="exercise-item" data-name="Russian Twists">
+                <h3>Russian Twists</h3>
+                <p class="description">A core exercise that targets the obliques.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the obliques, improves core stability.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Sit on the floor with your knees bent and your feet flat.</li>
+                        <li>Lean back slightly and hold a weight or medicine ball with both hands.</li>
+                        <li>Twist your torso to one side, then to the other side.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your core engaged and avoid rounding your back. Perform the twists in a controlled manner.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Reverse Crunches -->
+            <div class="exercise-item" data-name="Reverse Crunches">
+                <h3>Reverse Crunches</h3>
+                <p class="description">Targets the lower abs for improved core strength.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the lower abs, enhances core stability.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Lie on your back with your arms at your sides and your legs lifted towards the ceiling.</li>
+                        <li>Curl your hips off the floor, bringing your knees towards your chest.</li>
+                        <li>Slowly lower your hips back down to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Focus on using your abs to lift your hips. Avoid using your legs to generate momentum.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Bicycle Crunches -->
+            <div class="exercise-item" data-name="Bicycle Crunches">
+                <h3>Bicycle Crunches</h3>
+                <p class="description">A core exercise that targets the abdominal muscles and obliques.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the core, enhances abdominal definition, engages obliques.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Lie on your back with your hands behind your head and your legs lifted off the floor.</li>
+                        <li>Bring your right elbow towards your left knee while extending your right leg.</li>
+                        <li>Switch sides and repeat the movement in a pedaling motion.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your lower back pressed into the floor and perform the exercise slowly for better results.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Mountain Climbers -->
+            <div class="exercise-item" data-name="Mountain Climbers">
+                <h3>Mountain Climbers</h3>
+                <p class="description">A full-body exercise that increases cardiovascular fitness and engages multiple muscle groups.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Boosts cardio fitness, strengthens the core, improves agility.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Start in a plank position with your hands directly under your shoulders.</li>
+                        <li>Bring one knee towards your chest while keeping your other leg extended.</li>
+                        <li>Quickly switch legs in a running motion.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your core engaged and avoid letting your hips rise or drop.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Dumbbell Lunges -->
+            <div class="exercise-item" data-name="Dumbbell Lunges">
+                <h3>Dumbbell Lunges</h3>
+                <p class="description">A lower body exercise that targets the legs and glutes using dumbbells.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the legs, glutes, and core, improves balance.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Stand with your feet hip-width apart and hold a dumbbell in each hand.</li>
+                        <li>Step forward with one foot and lower your body until both knees are bent at 90 degrees.</li>
+                        <li>Push back to the starting position and repeat with the other leg.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your torso upright and avoid letting your front knee extend past your toes.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Tricep Extensions -->
+            <div class="exercise-item" data-name="Tricep Extensions">
+                <h3>Tricep Extensions</h3>
+                <p class="description">Targets the triceps for increased muscle definition.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the triceps, improves upper arm muscle tone.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Hold a dumbbell with both hands and extend your arms above your head.</li>
+                        <li>Slowly lower the dumbbell behind your head by bending your elbows.</li>
+                        <li>Extend your arms back to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your elbows close to your head and avoid using momentum.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Leg Raises -->
+            <div class="exercise-item" data-name="Leg Raises">
+                <h3>Leg Raises</h3>
+                <p class="description">A core exercise that targets the lower abdominal muscles.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the lower abs, improves core stability.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Lie on your back with your legs extended and your arms at your sides.</li>
+                        <li>Lift your legs towards the ceiling while keeping them straight.</li>
+                        <li>Slowly lower your legs back down without touching the floor.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your lower back pressed into the floor and move slowly to maximize engagement.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+            <!-- Hip Thrusts -->
+            <div class="exercise-item" data-name="Hip Thrusts">
+                <h3>Hip Thrusts</h3>
+                <p class="description">Focuses on strengthening the glutes and improving hip stability.</p>
+                <div class="details">
+                    <p><strong>Benefits:</strong> Strengthens the glutes, improves hip stability, enhances lower body strength.</p>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Sit on the floor with your upper back resting against a bench and a barbell over your hips.</li>
+                        <li>Drive your hips upwards, lifting the barbell with you.</li>
+                        <li>Lower your hips back down to the starting position.</li>
+                    </ul>
+                    <p><strong>Tips:</strong> Keep your feet flat on the ground and avoid overextending your back.</p>
+                    <p><strong>Image:</strong></p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Workout Routine Builder</h4>
+                <p>Your one-stop solution to creating personalized workout plans, fitness routines, and nutritional guidance to achieve your health and fitness goals.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./About.html">About Us</a></li>
+                    <li><a href="./Exercise Library.html">Exercise Library</a></li>
+                    <li><a href="./Nutrition & Tips.html">Nutrition & Tips</a></li>
+                    <li><a href="./Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> workout@groups.com</li>
+                    <li><i class="fas fa-phone"></i> +91 92847 7XXXX</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Maharashtra Major State Highway 3, ABC</li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Workout Routine Builder. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,773 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#navactive {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+/* What Users Are Saying Section */
+
+.user-feedback-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.user-feedback-section h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.allcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.onecard {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rating {
+    font-size: 20px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.onecard p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.onecard span {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-top: auto;
+}
+
+
+/* Feedback Card Hover Effect */
+
+.onecard {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.onecard:hover {
+    transform: scale(1.05);
+    background-color: #f4f4f4;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.onecard:hover .rating {
+    color: #e67e22;
+}
+
+
+/* Section Styles */
+
+#home {
+    background-color: #f9f9f9;
+    margin: 0px;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.welcome-banner {
+    text-align: center;
+    background-color: #e2e2e2;
+    background-image: url("./public/images/Welcome.jpeg");
+    padding: 50px;
+    color: white;
+    border-radius: 10px;
+}
+
+.buttonStart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.buttonStart:hover {
+    background-color: #201f1f;
+}
+
+.featured-workouts {
+    margin-top: 40px;
+}
+
+.workout-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .allcard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .onecard {
+        width: 100%;
+    }
+}
+
+
+/*after 170 line*/
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th,
+    td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#builder {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Table style */
+
+
+/* Professional Table Styles */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+td {
+    color: #555;
+}
+
+
+/* Mobile Responsive Styles */
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th,
+    td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+
+/* Exercise Library Section Styles */
+
+#library {
+    margin-top: 40px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.exercise-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.exercise-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    /* Adjust width for 3 items per row */
+    box-sizing: border-box;
+    flex: 1 1 calc(33.333% - 20px);
+    /* Ensure responsiveness */
+}
+
+.exercise-item h3 {
+    margin-top: 0;
+}
+
+.exercise-item .description {
+    font-style: italic;
+    color: #666;
+}
+
+.exercise-item .details {
+    margin-top: 10px;
+}
+
+.exercise-item .details p {
+    margin: 5px 0;
+}
+
+.exercise-item .details ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.exercise-item .details img.exercise-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .exercise-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .exercise-item {
+        width: calc(100% - 20px);
+    }
+}
+
+
+/* Goals & Achievements Section Styles */
+
+#goals-achievements {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.goals-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.goal-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar .progress {
+    background-color: #4caf50;
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.achievements-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.achievement-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.motivational-message {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+
+/* Nutrition & Tips Section Styles */
+
+#nutrition {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+#nutrition h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.nutrition-guide,
+.meal-plans,
+.fitness-tips {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nutrition-guide {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nutrition-guide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Styles for Personalized Nutrition Guide image */
+
+.nutrition-guide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .nutrition-guide img {
+        height: auto;
+    }
+}
+
+.meal-plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meal-plans .col-md-4 {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-plans .col-md-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.meal-plans h4 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.meal-plans img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.fitness-tips {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fitness-tips:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fitness-tips h4 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.fitness-tips ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fitness-tips ul li {
+    background: url('./public/images/checkmark.png') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.fitness-tips ul li:hover {
+    color: #e67e22;
+    /* Change text color on hover */
+}
+
+@media (max-width: 1024px) {
+    .meal-plans .col-md-4 {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .meal-plans .col-md-4 {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
+
+
+/* About Us Section Styles */
+
+#about-us {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+#about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about-us p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.about-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-item {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+@media screen and (max-width: 768px) {
+    .about-features {
+        flex-direction: column;
+    }
+    .feature-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-right: 10px;
+}
+
+.footer-container h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-about,
+.footer-links,
+.footer-newsletter,
+.footer-contact,
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-about p,
+.footer-contact ul li,
+.footer-newsletter form input,
+.footer-newsletter form button {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-links ul,
+.footer-contact ul,
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-contact ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-contact ul li {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover,
+.social-icons a:hover {
+    color: #00b4d8;
+}
+
+.footer-contact ul li i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p,
+.footer-bottom ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bottom ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-bottom ul li {
+    margin: 0 15px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+    color: #00b4d8;
+}
